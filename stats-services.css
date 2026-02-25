@@ -1,0 +1,202 @@
+/* ========================================
+   4 Mevsim Branda - Services & Stats Styling
+   Enhanced Four Seasons Design
+   ======================================== */
+
+/* ========================================
+/* ========================================
+   (Service Cards styles removed to enforce uniformity via styles.css)
+   ======================================== */
+
+
+/* ========================================
+   Stats Section - Dynamic Counters
+   ======================================== */
+
+.stats-section {
+    background: #ffffff;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.stats-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.02) 0%, transparent 70%);
+    opacity: 1;
+    animation: none;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100px);
+    }
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.counter-card {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #ffffff;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    /* Stronger shadow for lift */
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 24px;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Seasonal colors for counter cards */
+.counter-card:nth-child(4n+1) {
+    --counter-color: var(--color-spring);
+}
+
+.counter-card:nth-child(4n+2) {
+    --counter-color: var(--color-summer);
+}
+
+.counter-card:nth-child(4n+3) {
+    --counter-color: var(--color-autumn);
+}
+
+.counter-card:nth-child(4n+4) {
+    --counter-color: var(--color-winter);
+}
+
+.counter-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, var(--counter-color) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.counter-card:hover::before {
+    opacity: 0.15;
+}
+
+.counter-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow:
+        0 15px 45px rgba(0, 0, 0, 0.5),
+        0 0 60px var(--counter-color);
+    border-color: var(--counter-color);
+}
+
+.counter-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.5));
+    transition: transform 0.5s ease;
+}
+
+counter-card:hover .counter-icon {
+    transform: scale(1.2) rotate(-10deg);
+}
+
+.counter-number {
+    display: block;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--counter-color), var(--color-primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.counter-label {
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ========================================
+   WhatsApp Floating Button
+   ======================================== */
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 70px;
+    height: 70px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.15) translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    animation: none;
+}
+
+.whatsapp-float::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background: inherit;
+    animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+    opacity: 0.6;
+}
+
+@keyframes ping {
+
+    75%,
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog ve Haberler - 4 Mevsim Branda</title>
+    <meta name="description"
+        content="Pergole, tente ve gölgelendirme sistemleri hakkında ipuçları, sektör yenilikleri ve dekorasyon önerileri.">
+
+    <link rel="icon" type="image/png" href="../logo-futuristic.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles.css?v=6">
+</head>
+
+<body>
+    <!-- Navigation -->
+        <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <img src="../logo-futuristic.png" alt="4 Mevsim Branda Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-title">4 Mevsim Branda</span>
+                    <span class="logo-tagline">Fethiye'nin Brandacısı</span>
+                </div>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Ana Sayfa</a></li>
+                <li class="dropdown">
+                    <a href="../sayfa/hakkimizda/index.html" class="dropbtn">Kurumsal ▾</a>
+                    <div class="dropdown-content">
+                        <a href="../sayfa/hakkimizda/index.html">Hakkımızda</a>
+                        <a href="../sayfa/vizyonumuz/index.html">Vizyonumuz</a>
+                        <a href="../sayfa/misyonumuz/index.html">Misyonumuz</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="../hizmetdetay/index.html" class="dropbtn">Hizmetlerimiz ▾</a>
+                    <div class="dropdown-content">
+                        <a href="../hizmetdetay/pergole-sistemleri.html">Pergole Sistemleri</a>
+                        <a href="../hizmetdetay/golgelendirme-sistemleri.html">Gölgelendirme Sistemleri</a>
+                        <a href="../hizmetdetay/tente-sistemleri.html">Tente Sistemleri</a>
+                        <a href="../hizmetdetay/semsiye-sistemleri.html">Şemsiye Sistemleri</a>
+                        <a href="../hizmetdetay/balkon-stor-perde.html">Balkon Stor Perde</a>
+                        <a href="../hizmetdetay/mafsalli-tente.html">Mafsallı Tente</a>
+                        <a href="../hizmetdetay/zip-perde-sistemleri.html">Zip Perde Sistemleri</a>
+                        <a href="../hizmetdetay/giyotin-cam-sistemleri.html">Giyotin Cam Sistemleri</a>
+                        <a href="../hizmetdetay/wint-tente.html">Wint Tente</a>
+                        <a href="../hizmetdetay/arac-kaplama.html">Araç Kaplama</a>
+                    </div>
+                </li>
+                <li><a href="../albumler/galeri/index.html">Galeri</a></li>
+                <li><a href="../blog/index.html">Blog</a></li>
+                <li><a href="../iletisim/index.html">İletişim Bilgileri</a></li>
+                <li>
+                    <a href="tel:05514218705" class="btn btn-primary" style="padding: 0.5rem 1rem;">
+                        0 551 421 87 05
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="blog-hero">
+        <div class="container">
+            <h1 class="text-gradient" style="font-size: 3.5rem; margin-bottom: 1rem; font-family: 'Playfair Display', serif;">Blog & Haberler</h1>
+            <p style="font-size: 1.2rem; color: var(--color-text-muted); max-width: 600px; margin: 0 auto;">
+                Gölgelendirme dünyasındaki en son trendler, dekorasyon fikirleri ve sektör haberlerini keşfedin.
+            </p>
+
+            <!-- Filters -->
+            <div class="blog-filter-container" id="blogFilters">
+                <button class="blog-filter-btn active" data-filter="all">Tümü</button>
+                <button class="blog-filter-btn" data-filter="trendler">Trendler</button>
+                <button class="blog-filter-btn" data-filter="ipuclari">İpuçları</button>
+                <button class="blog-filter-btn" data-filter="urunler">Ürün İncelemeleri</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid Content -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="blog-grid" id="blogGrid">
+            
+                <!-- Post 1 -->
+                <a href="en-iyi-pergola-modelleri-2026.html" class="blog-card" data-category="trendler">
+                    <span class="blog-category-badge">Trendler</span>
+                    <div class="blog-img-wrapper">
+                        <img src="../pergole_main.jpg" alt="Pergola Modelleri 2026" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">15 Şubat 2026</span>
+                        <h3 class="blog-title">2026 Yılının En İyi Motorlu Pergola Modelleri</h3>
+                        <p class="blog-excerpt">
+                            Modern mimarinin vazgeçilmezi olan motorlu pergola sistemlerinde bu yıl öne çıkan LED aydınlatmalı ve akıllı ev uyumlu modelleri inceliyoruz.
+                        </p>
+                        <span class="blog-read-more">Devamını Oku</span>
+                    </div>
+                </a>
+
+                <!-- Post 2 -->
+                <a href="giyotin-cam-ile-kis-bahcesi.html" class="blog-card" data-category="urunler">
+                    <span class="blog-category-badge">Ürün İncelemeleri</span>
+                    <div class="blog-img-wrapper">
+                        <img src="../hero2.png" alt="Giyotin Cam Sistemleri" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">28 Ocak 2026</span>
+                        <h3 class="blog-title">Giyotin Cam Sistemleri ile Dört Mevsim Kış Bahçesi</h3>
+                        <p class="blog-excerpt">
+                            Restoranlar ve müstakil evlerin terasları için ısı yalıtımlı giyotin cam sistemlerinin sağladığı eşsiz konfor ve enerji tasarrufu ipuçları.
+                        </p>
+                        <span class="blog-read-more">Devamını Oku</span>
+                    </div>
+                </a>
+
+                <!-- Post 3 -->
+                <a href="tente-temizligi-ve-bakimi.html" class="blog-card" data-category="ipuclari">
+                    <span class="blog-category-badge">İpuçları</span>
+                    <div class="blog-img-wrapper">
+                        <img src="../tente_sistemleri.jpg" alt="Tente Bakımı" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">10 Ocak 2026</span>
+                        <h3 class="blog-title">Uzun Ömürlü Kullanım İçin Tente ve Branda Bakım Rehberi</h3>
+                        <p class="blog-excerpt">
+                            Tente kumaşlarınızı mevsim geçişlerinde nasıl temizlemelisiniz? Çamaşır suyu kullanımı neden zararlıdır? İşte pratik bakım tüyoları.
+                        </p>
+                        <span class="blog-read-more">Devamını Oku</span>
+                    </div>
+                </a>
+
+                <!-- Post 4 (Example of filtering) -->
+                <a href="zip-perde-rüzgar-dayanimi.html" class="blog-card" data-category="trendler">
+                    <span class="blog-category-badge">Trendler</span>
+                    <div class="blog-img-wrapper">
+                        <img src="../zip_perde_firtina.png" alt="Zip Perde Dayanımı" loading="lazy" onerror="this.src='../logo-futuristic.png'">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">5 Aralık 2025</span>
+                        <h3 class="blog-title">Yeni Nesil Zip Perdelerde Fırtına ve Rüzgar Dayanımı</h3>
+                        <p class="blog-excerpt">
+                            Fethiye ve Göcek gibi rüzgarlı kıyı şeritlerinde dahi fermuarlı yapısıyla esnemeden durabilen zip perde teknolojisinin arkasındaki mühendislik.
+                        </p>
+                        <span class="blog-read-more">Devamını Oku</span>
+                    </div>
+                </a>
+                <a href="fethiye-kafe-restoran-tente-cozumleri.html" class="blog-card" data-category="trendler">
+                    <span class="blog-category-badge">Trendler</span>
+                    <div class="blog-img-wrapper">
+                        <img src="../isikli_pergola_fethiye_kafe.png" alt="Fethiye Kafe ve Restoranları İçin En İyi Tente Çözümleri" loading="lazy" onerror="this.src='../logo-futuristic.png'">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">10 Mart 2026</span>
+                        <h3 class="blog-title">Fethiye Kafe ve Restoranları İçin En İyi Tente Çözümleri</h3>
+                        <p class="blog-excerpt">
+                            Sezonu uzatmak ve müşteri konforunu artırmak isteyen Fethiye işletmecileri için en trend ışıklı pergola ve tente modelleri.
+                        </p>
+                        <span class="blog-read-more">Devamını Oku</span>
+                    </div>
+                </a>
+
+                <a href="gocek-villalari-icin-biyoklimatik-pergola.html" class="blog-card" data-category="urunler">
+                    <span class="blog-category-badge">Ürün İncelemeleri</span>
+                    <div class="blog-img-wrapper">
+                        <img src="../motorlu_pergola_gocek.png" alt="Göcek Villaları İçin Biyoklimatik Pergola Sistemleri" loading="lazy" onerror="this.src='../logo-futuristic.png'">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">05 Mart 2026</span>
+                        <h3 class="blog-title">Göcek Villaları İçin Biyoklimatik Pergola Sistemleri</h3>
+                        <p class="blog-excerpt">
+                            Lüks ve estetiğin buluştuğu Göcek villalarının dış mekan tasarımlarında neden biyoklimatik pergola tercih edilmeli?
+                        </p>
+                        <span class="blog-read-more">Devamını Oku</span>
+                    </div>
+                </a>
+
+                <a href="oludeniz-otellerinde-havuz-kenari-golgelendirme.html" class="blog-card" data-category="ipuclari">
+                    <span class="blog-category-badge">İpuçları</span>
+                    <div class="blog-img-wrapper">
+                        <img src="../oludeniz_havuz_semsiye.png" alt="Ölüdeniz Otellerinde Havuz Kenarı Gölgelendirme İpuçları" loading="lazy" onerror="this.src='../logo-futuristic.png'">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">28 Şubat 2026</span>
+                        <h3 class="blog-title">Ölüdeniz Otellerinde Havuz Kenarı Gölgelendirme İpuçları</h3>
+                        <p class="blog-excerpt">
+                            Ölüdeniz bölgesindeki otel ve tatil köyleri için misafir memnuniyetini artıracak havuz başı şemsiye ve tente seçimi.
+                        </p>
+                        <span class="blog-read-more">Devamını Oku</span>
+                    </div>
+                </a>
+
+                <a href="kavacik-rüzgarlarina-karsi-zip-perde.html" class="blog-card" data-category="urunler">
+                    <span class="blog-category-badge">Ürün İncelemeleri</span>
+                    <div class="blog-img-wrapper">
+                        <img src="../zip_perde_kayakoy.png" alt="Kayaköy ve Seydikemer Rüzgarlarına Karşı Zip Perde" loading="lazy" onerror="this.src='../logo-futuristic.png'">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">22 Şubat 2026</span>
+                        <h3 class="blog-title">Kayaköy ve Seydikemer Rüzgarlarına Karşı Zip Perde</h3>
+                        <p class="blog-excerpt">
+                            Fethiye'nin rüzgarlı kesimlerindeki evler için tasarlanmış, fırtınaya dayanıklı motorlu zip perde sistemleri.
+                        </p>
+                        <span class="blog-read-more">Devamını Oku</span>
+                    </div>
+                </a>
+
+                <a href="fethiye-cam-balkon-kapatma-fiyatlari-2026.html" class="blog-card" data-category="trendler">
+                    <span class="blog-category-badge">Trendler</span>
+                    <div class="blog-img-wrapper">
+                        <img src="../cam_balkon_fethiye.png" alt="Fethiye Cam Balkon Kapatma Fiyatları 2026" loading="lazy" onerror="this.src='../logo-futuristic.png'">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">18 Şubat 2026</span>
+                        <h3 class="blog-title">Fethiye Cam Balkon Kapatma Fiyatları 2026</h3>
+                        <p class="blog-excerpt">
+                            2026 yılında Fethiye'de balkon veya teras kapatmak isteyenler için katlanır ve giyotin cam balkon maliyet analizi.
+                        </p>
+                        <span class="blog-read-more">Devamını Oku</span>
+                    </div>
+                </a>
+
+                <a href="calis-plaji-isletmeleri-icin-mafsalli-tenteler.html" class="blog-card" data-category="ipuclari">
+                    <span class="blog-category-badge">İpuçları</span>
+                    <div class="blog-img-wrapper">
+                        <img src="../mafsalli_tente_calis.png" alt="Çalış Plajı İşletmeleri İçin Mafsallı Tentelerin Önemi" loading="lazy" onerror="this.src='../logo-futuristic.png'">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">12 Şubat 2026</span>
+                        <h3 class="blog-title">Çalış Plajı İşletmeleri İçin Mafsallı Tentelerin Önemi</h3>
+                        <p class="blog-excerpt">
+                            Güneşin en güzel battığı yer olan Çalış Plajı'ndaki kafe ve bar işletmecilerine tente seçimi tüyoları.
+                        </p>
+                        <span class="blog-read-more">Devamını Oku</span>
+                    </div>
+                </a>
+
+                <a href="mugla-kavurucu-sicaklarinda-serin-teraslar.html" class="blog-card" data-category="ipuclari">
+                    <span class="blog-category-badge">İpuçları</span>
+                    <div class="blog-img-wrapper">
+                        <img src="../mugla_serin_teras.png" alt="Muğla Sıcaklarında Serin Teraslar Yaratmanın Sırrı" loading="lazy" onerror="this.src='../logo-futuristic.png'">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">02 Şubat 2026</span>
+                        <h3 class="blog-title">Muğla Sıcaklarında Serin Teraslar Yaratmanın Sırrı</h3>
+                        <p class="blog-excerpt">
+                            Temmuz ve Ağustos aylarında 40 dereceyi bulan Muğla sıcağına karşı terasını korumanın ve serin tutmanın yolları.
+                        </p>
+                        <span class="blog-read-more">Devamını Oku</span>
+                    </div>
+                </a>
+
+                <a href="fethiye-marina-tekne-golgelendirme-sistemleri.html" class="blog-card" data-category="trendler">
+                    <span class="blog-category-badge">Trendler</span>
+                    <div class="blog-img-wrapper">
+                        <img src="../marina_tekne_branda.png" alt="Göcek ve Fethiye Marinalarında Tekne Gölgelendirme Sistemleri" loading="lazy" onerror="this.src='../logo-futuristic.png'">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">20 Ocak 2026</span>
+                        <h3 class="blog-title">Göcek ve Fethiye Marinalarında Tekne Gölgelendirme Sistemleri</h3>
+                        <p class="blog-excerpt">
+                            Lüks yatlar ve guletler için tuzlu suya dayanıklı, paslanmaz gölgelendirme ve branda tasarımları.
+                        </p>
+                        <span class="blog-read-more">Devamını Oku</span>
+                    </div>
+                </a>
+
+                <a href="hisaronu-villalarinda-kis-bahcesi-keyfi.html" class="blog-card" data-category="urunler">
+                    <span class="blog-category-badge">Ürün İncelemeleri</span>
+                    <div class="blog-img-wrapper">
+                        <img src="../kis_bahcesi_hisaronu.png" alt="Ovacık ve Hisarönü Villalarında Kış Bahçesi Keyfi" loading="lazy" onerror="this.src='../logo-futuristic.png'">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">10 Ocak 2026</span>
+                        <h3 class="blog-title">Ovacık ve Hisarönü Villalarında Kış Bahçesi Keyfi</h3>
+                        <p class="blog-excerpt">
+                            Havası her zaman serin olan Ovacık ve Hisarönü mevkilerindeki evler için ideal kış bahçesi dekorasyonu.
+                        </p>
+                        <span class="blog-read-more">Devamını Oku</span>
+                    </div>
+                </a>
+
+                <a href="fethiye-branda-semsiye-secim-rehberi.html" class="blog-card" data-category="ipuclari">
+                    <span class="blog-category-badge">İpuçları</span>
+                    <div class="blog-img-wrapper">
+                        <img src="../branda_semsiye_fethiye.png" alt="Fethiye'de İşletmeler İçin Şemsiye ve Branda Seçim Rehberi" loading="lazy" onerror="this.src='../logo-futuristic.png'">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">05 Ocak 2026</span>
+                        <h3 class="blog-title">Fethiye'de İşletmeler İçin Şemsiye ve Branda Seçim Rehberi</h3>
+                        <p class="blog-excerpt">
+                            Çay bahçelerinden butik otellere; mekanınız için hangi şemsiye veya tente modelinin uygun olduğuna nasıl karar verirsiniz?
+                        </p>
+                        <span class="blog-read-more">Devamını Oku</span>
+                    </div>
+                </a>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+        <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="text-gradient">4 Mevsim Branda</h3>
+                    <p>
+                        Yaşam alanlarını her mevsim konforlu, estetik ve kullanışlı hale getiren yenilikçi çözümler sunarak,
+                        tente ve gölgelendirme sistemleri sektöründe öncü ve güvenilir bir marka olmak. Kalite, estetik ve
+                        müşteri memnuniyetini ön planda tutarak, hem bireysel hem de kurumsal müşterilerimizin ilk tercihi olmak.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Hızlı Bağlantılar</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Ana Sayfa</a></li>
+                        <li><a href="../sayfa/hakkimizda/index.html">Kurumsal</a></li>
+                        <li><a href="../hizmetdetay/index.html">Hizmetlerimiz</a></li>
+                        <li><a href="../albumler/galeri/index.html">Galeri</a></li>
+                        <li><a href="../blog/index.html">Blog</a></li>
+                        <li><a href="../iletisim/index.html">İletişim</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Müşteri Hizmetleri</h3>
+                    <ul class="footer-links">
+                        <li><a href="../sayfa/montaj-hizmeti/index.html">Montaj Hizmeti</a></li>
+                        <li><a href="../sayfa/garanti-politikasi/index.html">Garanti Politikası</a></li>
+                        <li><a href="../sayfa/bakim-onarim/index.html">Bakım & Onarım</a></li>
+                        <li><a href="../sayfa/referanslarimiz/index.html">Referanslarımız</a></li>
+                        <li><a href="../sayfa/sss/index.html">SSS</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Kurumsal</h3>
+                    <ul class="footer-links">
+                        <li><a href="../sayfa/hikayemiz/index.html">Hikayemiz</a></li>
+                        <li><a href="../sayfa/kariyer/index.html">Kariyer</a></li>
+                        <li><a href="../sayfa/ticari-hesaplar/index.html">Ticari Hesaplar</a></li>
+                        <li><a href="../sayfa/gizlilik-politikasi/index.html">Gizlilik Politikası</a></li>
+                        <li><a href="../sayfa/sartlar-kosullar/index.html">Şartlar & Koşullar</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 4 Mevsim Branda. Tüm hakları saklıdır. Fethiye/Muğla.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript For Filtering -->
+    <script src="../script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.blog-filter-btn');
+            const blogCards = document.querySelectorAll('.blog-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Update active class on buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    // Filter cards
+                    const filterValue = btn.getAttribute('data-filter');
+
+                    blogCards.forEach(card => {
+                        const category = card.getAttribute('data-category');
+                        
+                        if (filterValue === 'all' || category === filterValue) {
+                            card.style.display = 'flex';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 50);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 400); // Wait for transition
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

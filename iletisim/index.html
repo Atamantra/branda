@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - 4 Mevsim Branda | Fethiye</title>
+    <meta name="description"
+        content="4 Mevsim Branda iletişim bilgileri. Fethiye'de tente, pergole ve gölgelendirme sistemleri için bizimle iletişime geçin.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../logo-futuristic.png">
+    <link rel="apple-touch-icon" href="../logo-futuristic.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles.css?v=5">
+    <link rel="stylesheet" href="../stats-services.css?v=5">
+
+    <style>
+        .contact-hero {
+            padding: 12rem 0 6rem;
+            background: url('../hero2.png') no-repeat center center/cover;
+            position: relative;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .contact-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 23, 42, 0.6);
+            /* Dark overlay */
+            backdrop-filter: blur(4px);
+            /* Slight blur to background */
+            z-index: 1;
+        }
+
+        .contact-hero .container {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero-glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 3rem 4rem;
+            border-radius: 24px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .contact-form-container {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 3rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #1e293b;
+        }
+
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            font-family: 'Inter', sans-serif;
+            transition: all 0.3s ease;
+            background: #f8fafc;
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+            background: white;
+        }
+
+        .contact-info-card {
+            background: #f8fafc;
+            border-radius: 24px;
+            padding: 2.5rem;
+            height: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .contact-icon {
+            width: 48px;
+            height: 48px;
+            background: white;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            flex-shrink: 0;
+        }
+
+        .map-container {
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+        <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <img src="../logo-futuristic.png" alt="4 Mevsim Branda Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-title">4 Mevsim Branda</span>
+                    <span class="logo-tagline">Fethiye'nin Brandacısı</span>
+                </div>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Ana Sayfa</a></li>
+                <li class="dropdown">
+                    <a href="../sayfa/hakkimizda/index.html" class="dropbtn">Kurumsal ▾</a>
+                    <div class="dropdown-content">
+                        <a href="../sayfa/hakkimizda/index.html">Hakkımızda</a>
+                        <a href="../sayfa/vizyonumuz/index.html">Vizyonumuz</a>
+                        <a href="../sayfa/misyonumuz/index.html">Misyonumuz</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="../hizmetdetay/index.html" class="dropbtn">Hizmetlerimiz ▾</a>
+                    <div class="dropdown-content">
+                        <a href="../hizmetdetay/pergole-sistemleri.html">Pergole Sistemleri</a>
+                        <a href="../hizmetdetay/golgelendirme-sistemleri.html">Gölgelendirme Sistemleri</a>
+                        <a href="../hizmetdetay/tente-sistemleri.html">Tente Sistemleri</a>
+                        <a href="../hizmetdetay/semsiye-sistemleri.html">Şemsiye Sistemleri</a>
+                        <a href="../hizmetdetay/balkon-stor-perde.html">Balkon Stor Perde</a>
+                        <a href="../hizmetdetay/mafsalli-tente.html">Mafsallı Tente</a>
+                        <a href="../hizmetdetay/zip-perde-sistemleri.html">Zip Perde Sistemleri</a>
+                        <a href="../hizmetdetay/giyotin-cam-sistemleri.html">Giyotin Cam Sistemleri</a>
+                        <a href="../hizmetdetay/wint-tente.html">Wint Tente</a>
+                        <a href="../hizmetdetay/arac-kaplama.html">Araç Kaplama</a>
+                    </div>
+                </li>
+                <li><a href="../albumler/galeri/index.html">Galeri</a></li>
+                <li><a href="../blog/index.html">Blog</a></li>
+                <li><a href="../iletisim/index.html">İletişim Bilgileri</a></li>
+                <li>
+                    <a href="tel:05514218705" class="btn btn-primary" style="padding: 0.5rem 1rem;">
+                        0 551 421 87 05
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="contact-hero">
+        <div class="container">
+            <div class="hero-glass-card">
+                <h1
+                    style="font-family: 'Playfair Display', serif; font-size: 3.5rem; margin-bottom: 1rem; color: white; text-shadow: 0 2px 10px rgba(0,0,0,0.3);">
+                    Bizimle İletişime Geçin
+                </h1>
+                <p style="font-size: 1.25rem; opacity: 0.9; max-width: 600px; margin: 0 auto; color: #f1f5f9;">
+                    Projeleriniz için detaylı bilgi almak, ücretsiz keşif talep etmek veya sorularınız için bize ulaşın.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Contact Section -->
+    <section class="section" style="background: #ffffff;">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: start; gap: 4rem;">
+
+                <!-- Contact Info -->
+                <div>
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">İletişim Bilgileri</h2>
+                    <div class="contact-info-card">
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #1e293b;">Telefon & GSM</h4>
+                                <p style="color: #64748b; line-height: 1.6;">
+                                    <a href="tel:05514218705" style="color: inherit; text-decoration: none;">0 551 421
+                                        87 05</a>
+                                    <br>
+                                    <span style="font-size: 0.9rem; opacity: 0.8;">GSM: 0 551 421 87 05</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #1e293b;">Adres</h4>
+                                <p style="color: #64748b; line-height: 1.6;">
+                                    Yeni Mahalle Adnan Menderes Bulvarı No: 284/B<br>
+                                    Fethiye / Muğla
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #1e293b;">E-posta</h4>
+                                <p style="color: #64748b; line-height: 1.6;">
+                                    <a href="mailto:info@4mevsimbranda.com"
+                                        style="color: inherit; text-decoration: none;">info@4mevsimbranda.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Bize Yazın</h2>
+                    <div class="contact-form-container">
+                        <form action="#" method="POST">
+                            <div class="grid grid-2" style="gap: 1.5rem; margin-bottom: 1.5rem;">
+                                <div class="form-group" style="margin: 0;">
+                                    <label class="form-label">Adınız Soyadınız</label>
+                                    <input type="text" class="form-input" placeholder="Adınız Soyadınız" required>
+                                </div>
+                                <div class="form-group" style="margin: 0;">
+                                    <label class="form-label">Telefon</label>
+                                    <input type="tel" class="form-input" placeholder="05XX XXX XX XX" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">E-posta Adresi</label>
+                                <input type="email" class="form-input" placeholder="ornek@email.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Konu</label>
+                                <select class="form-input">
+                                    <option>Genel Bilgi</option>
+                                    <option>Ücretsiz Keşif İsteği</option>
+                                    <option>Fiyat Teklifi</option>
+                                    <option>Teknik Servis</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Mesajınız</label>
+                                <textarea class="form-textarea" rows="5" placeholder="Mesajınızı buraya yazın..."
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Mesaj Gönder</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Map -->
+            <div class="map-container">
+                <iframe
+                    src="https://maps.google.com/maps?q=4+MEVS%C4%B0M+DE+BRANDA,+Fethiye&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+        <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="text-gradient">4 Mevsim Branda</h3>
+                    <p>
+                        Yaşam alanlarını her mevsim konforlu, estetik ve kullanışlı hale getiren yenilikçi çözümler sunarak,
+                        tente ve gölgelendirme sistemleri sektöründe öncü ve güvenilir bir marka olmak. Kalite, estetik ve
+                        müşteri memnuniyetini ön planda tutarak, hem bireysel hem de kurumsal müşterilerimizin ilk tercihi olmak.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Hızlı Bağlantılar</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Ana Sayfa</a></li>
+                        <li><a href="../sayfa/hakkimizda/index.html">Kurumsal</a></li>
+                        <li><a href="../hizmetdetay/index.html">Hizmetlerimiz</a></li>
+                        <li><a href="../albumler/galeri/index.html">Galeri</a></li>
+                        <li><a href="../blog/index.html">Blog</a></li>
+                        <li><a href="../iletisim/index.html">İletişim</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Müşteri Hizmetleri</h3>
+                    <ul class="footer-links">
+                        <li><a href="../sayfa/montaj-hizmeti/index.html">Montaj Hizmeti</a></li>
+                        <li><a href="../sayfa/garanti-politikasi/index.html">Garanti Politikası</a></li>
+                        <li><a href="../sayfa/bakim-onarim/index.html">Bakım & Onarım</a></li>
+                        <li><a href="../sayfa/referanslarimiz/index.html">Referanslarımız</a></li>
+                        <li><a href="../sayfa/sss/index.html">SSS</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Kurumsal</h3>
+                    <ul class="footer-links">
+                        <li><a href="../sayfa/hikayemiz/index.html">Hikayemiz</a></li>
+                        <li><a href="../sayfa/kariyer/index.html">Kariyer</a></li>
+                        <li><a href="../sayfa/ticari-hesaplar/index.html">Ticari Hesaplar</a></li>
+                        <li><a href="../sayfa/gizlilik-politikasi/index.html">Gizlilik Politikası</a></li>
+                        <li><a href="../sayfa/sartlar-kosullar/index.html">Şartlar & Koşullar</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 4 Mevsim Branda. Tüm hakları saklıdır. Fethiye/Muğla.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/905514218705" class="whatsapp-float" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="white">
+            <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+        </svg>
+    </a>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
