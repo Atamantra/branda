@@ -1780,11 +1780,11 @@ p {
 }
 
 .footer-bottom {
-  text-align: center;
+  text-align: left;
   padding-top: 3rem;
   padding-bottom: 2rem;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
-  color: var(--color-text-light);
+  color: var(a--color-text-light);
   font-size: 0.9rem;
   display: flex;
   justify-content: space-between;
